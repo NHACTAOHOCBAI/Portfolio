@@ -5,7 +5,9 @@ const App = () => {
   return (
     <>
       <AppHeader />
-      <HeroPage />
+      <body>
+        <HeroPage />
+      </body>
     </>
   )
 }
