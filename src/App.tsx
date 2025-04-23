@@ -5,6 +5,7 @@ import AboutPage from "./pages/aboutPage"
 import SkillsPage from "./pages/skillsPage"
 import ExperiencePage from "./pages/experiencePage"
 import WorkPage from "./pages/workPage"
+import TestimonialsPage from "./pages/testimonialsPage"
 const App = () => {
   return (
     <>
@@ -15,6 +16,7 @@ const App = () => {
         <SkillsPage />
         <ExperiencePage />
         <WorkPage />
+        <TestimonialsPage />
       </main>
     </>
   )
