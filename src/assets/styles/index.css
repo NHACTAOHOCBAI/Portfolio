@@ -64,4 +64,12 @@
     .container {
         @apply w-[1280px] h-full mx-auto;
     }
+
+    .page-title {
+        @apply flex justify-center w-fit items-center min-w-[105px] h-[28px] rounded-xl bg-gray-300 desc-text 
+    }
+
+    .desc-text {
+        @apply text-[1.6rem] leading-[1.5] text-gray-600
+    }
 }
