@@ -17,7 +17,7 @@ const TestimonialsPage = () => {
         }
     ]
     return (
-        <section className="bg-slate-200 pt-[96px] pb-[96px]">
+        <section id="testimonials" className="bg-slate-200 pt-[96px] pb-[96px]">
             <div className="container">
                 {/* title */}
                 <div className="gap-[16px] flex justify-center items-center flex-col">

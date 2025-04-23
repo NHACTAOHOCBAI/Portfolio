@@ -2,7 +2,7 @@ import Avatar from "../components/avatar";
 
 const AboutPage = () => {
     return (
-        <section className="bg-slate-200 pt-[96px] pb-[96px]">
+        <section id="about" className="bg-slate-200 pt-[96px] pb-[96px]">
             <div className="container">
                 {/* title */}
                 <div className="flex justify-center">

@@ -28,7 +28,7 @@ const WorkPage = () => {
         },
     ]
     return (
-        <section className=" pt-[96px] pb-[96px]">
+        <section id="work" className=" pt-[96px] pb-[96px]">
             <div className="container">
                 {/* title */}
                 <div className="gap-[16px] flex justify-center items-center flex-col">

@@ -2,7 +2,7 @@ import { FiFacebook, FiGithub } from "react-icons/fi";
 
 const AppFooter = () => {
     return (
-        <footer className="pt-[96px] pb-[96px]">
+        <footer id="contact" className="pt-[96px] pb-[96px]">
             <div className="container flex flex-col items-center justify-center text-center" >
                 <h2 className="page-title">Get in touch</h2>
                 <p className="desc-text text-[1.8rem] w-[580px] mt-[16px]">

@@ -3,7 +3,7 @@ import Avatar from "../components/avatar"
 
 const HeroPage = () => {
     return (
-        <section className="h-screen">
+        <section id="hero" className="h-screen">
             <div className="container flex items-center justify-between">
                 <section className="w-[50%]">
                     {/* introduction */}
