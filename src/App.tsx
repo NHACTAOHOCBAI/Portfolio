@@ -6,6 +6,7 @@ import SkillsPage from "./pages/skillsPage"
 import ExperiencePage from "./pages/experiencePage"
 import WorkPage from "./pages/workPage"
 import TestimonialsPage from "./pages/testimonialsPage"
+import AppFooter from "./components/appFooter"
 const App = () => {
   return (
     <>
@@ -18,6 +19,7 @@ const App = () => {
         <WorkPage />
         <TestimonialsPage />
       </main>
+      <AppFooter />
     </>
   )
 }
