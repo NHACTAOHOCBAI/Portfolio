@@ -4,6 +4,7 @@ import './assets/styles/index.css'
 import AboutPage from "./pages/aboutPage"
 import SkillsPage from "./pages/skillsPage"
 import ExperiencePage from "./pages/experiencePage"
+import WorkPage from "./pages/workPage"
 const App = () => {
   return (
     <>
@@ -13,6 +14,7 @@ const App = () => {
         <AboutPage />
         <SkillsPage />
         <ExperiencePage />
+        <WorkPage />
       </main>
     </>
   )

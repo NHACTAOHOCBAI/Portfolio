@@ -66,7 +66,7 @@
     }
 
     .page-title {
-        @apply flex justify-center w-fit items-center min-w-[105px] h-[28px] rounded-xl bg-gray-300 desc-text 
+        @apply pl-[24px] pr-[24px] flex justify-center w-fit items-center min-w-[105px] h-[28px] rounded-[999px] bg-gray-300 desc-text 
     }
 
     .desc-text {
