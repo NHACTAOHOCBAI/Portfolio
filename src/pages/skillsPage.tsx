@@ -41,7 +41,7 @@ const SkillsPage = () => {
                     <h2 className="page-title ">
                         Skills
                     </h2>
-                    <p className="desc-text text-[2rem]">
+                    <p className="desc-text text-[1.8rem]">
                         The skills, tools and technologies I am really good at:
                     </p>
                 </div>
