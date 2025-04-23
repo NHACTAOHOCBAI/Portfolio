@@ -1,8 +1,12 @@
+import { FiFacebook, FiGithub } from "react-icons/fi"
+import Avatar from "../components/avatar"
+
 const HeroPage = () => {
     return (
         <section className="h-screen">
             <div className="container flex items-center">
-                <section>
+                <section className="w-[50%]">
+                    {/* introduction */}
                     <h1 className="text-[6rem] font-bold leading-tight">
                         Hi,I'm Phucs
                     </h1>
@@ -17,7 +21,19 @@ const HeroPage = () => {
                         <img src="src/assets/img/hero_section/icon2.svg" alt="" />
                         <p className="text-[1.6rem] leading-[1.5] text-gray-600">Available for new projects</p>
                     </div>
+                    {/* contact */}
+                    <div className="flex mt-[48px] gap-[10px]">
+                        <a href="https://github.com/NHACTAOHOCBAI">
+                            <FiGithub size={24} className="text-gray-600" />
+                        </a>
+                        <a href="https://www.facebook.com/profile.php?id=100047067371826">
+                            <FiFacebook size={24} className="text-gray-600" />
+                        </a>
+                    </div>
                 </section>
+                <div className="ml-auto">
+                    <Avatar urlImg="https://i.pinimg.com/736x/13/9b/bb/139bbb8c450b7cd338a2ad25aef7d50d.jpg" />
+                </div>
             </div>
         </section>
     )
