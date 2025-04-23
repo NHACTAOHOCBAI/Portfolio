@@ -2,6 +2,7 @@ import AppHeader from "./components/appHeader"
 import HeroPage from "./pages/heroPage"
 import './assets/styles/index.css'
 import AboutPage from "./pages/aboutPage"
+import SkillsPage from "./pages/skillsPage"
 const App = () => {
   return (
     <>
@@ -9,6 +10,7 @@ const App = () => {
       <main>
         <HeroPage />
         <AboutPage />
+        <SkillsPage />
       </main>
     </>
   )
