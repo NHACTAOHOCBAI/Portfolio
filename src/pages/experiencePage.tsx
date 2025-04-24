@@ -44,7 +44,9 @@ const ExperiencePage = () => {
                     {
                         expList.map((value) => {
                             return (
-                                <article className="p-[32px] rounded-[8px] bg-white w-[896px] flex justify-between desc-text">
+                                <article className="
+                                duration-200 hover:translate-x-20 hover:shadow-2xl
+                               shadow-lg p-[32px] rounded-[8px] bg-white w-[896px] flex justify-between desc-text">
                                     <figure className="w-[200px] text-left">
                                         <img className="w-[100px]" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNg1hVrGgDyRiqMoXpx8zjispf0j_tJ38YWQ&s" alt="" />
                                     </figure>

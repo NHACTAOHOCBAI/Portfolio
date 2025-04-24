@@ -48,16 +48,19 @@ const AppHeader = () => {
                     {
                         linkData.map((value) => {
                             return (
-                                <a className=" text-gray-700" href={value.path}>{value.name}</a>
+                                <a
+                                    style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.2)' }}
+                                    className="duration-200 hover:text-indigo-400 hover:-translate-y-1
+                                 select-none text-gray-700" href={value.path}>{value.name}</a>
                             )
                         })
                     }
                 </nav>
-                <div className="w-[1px] h-[24px] bg-gray-300 mx-[24px]"></div>
-                <div>
+                <div className="select-none w-[1px] h-[24px] bg-gray-300 mx-[24px]"></div>
+                <div className="select-none">
                     <img src={isDarkMode ? "/src/assets/img/app-header/dark-mode.svg" : "/src/assets/img/app-header/light-mode.svg"} alt="" onClick={toggleMode} />
                 </div>
-                <a className="dark:bg-slate-600 ml-[16px] rounded-[12px] px-[16px] py-[10px] bg-[#130f40]  text-white" href="#!">Download CV</a>
+                <a className="select-none duration-200 hover:shadow-xl hover:scale-105 hover:bg-sky-500 ml-[16px] rounded-[12px] px-[16px] py-[10px] bg-[#130f40]  text-white" href="#!">Download CV</a>
             </div>
         </header>
     )

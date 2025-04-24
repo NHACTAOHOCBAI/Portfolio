@@ -1,3 +1,4 @@
+import { CiLink } from "react-icons/ci"
 
 
 const WorkPage = () => {
@@ -44,10 +45,21 @@ const WorkPage = () => {
                         projectList.map((value, index) => {
                             if (index % 2 === 0)
                                 return (
-                                    <article className="rounded-[10px] w-[1152px] h-[480px] shadow-md flex  overflow-hidden">
-                                        <figure className="w-[50%] p-[48px] bg-slate-100">
-                                            <img src={value.img} alt="" className="shadow-sm rounded-[10px] w-[100%] h-[100%] object-cover object-left-top" />
-                                        </figure>
+                                    <article className="
+                                    rounded-[10px] w-[1152px] h-[480px] shadow-md flex  overflow-hidden">
+                                        <div className="w-[50%] p-[48px] bg-slate-100">
+                                            <figure className="group relative w-full h-full overflow-hidden rounded-[10px] shadow-md">
+                                                <div className="
+                                                duration-200 group-hover:-top-0
+                                                flex justify-center items-center z-10 absolute -top-full w-full h-full inset-0 bg-[rgba(0,0,0,0.2)]">
+                                                    <a href="">
+                                                        <CiLink size={24} />
+                                                    </a>
+                                                </div>
+                                                <img className="duration-200 group-hover:scale-105 group-hover:blur-[0.9px]"
+                                                    src={value.img} alt="" />
+                                            </figure>
+                                        </div>
                                         <section className="w-[50%]  p-[48px] flex flex-col gap-[24px]">
                                             <h3 className="text-[2rem] font-semibold leading-tight">
                                                 {value.name}
@@ -76,7 +88,8 @@ const WorkPage = () => {
                                 )
                             else
                                 return (
-                                    <article className="rounded-[10px] w-[1152px] h-[480px] shadow-md flex  overflow-hidden">
+                                    <article className="
+                                    rounded-[10px] w-[1152px] h-[480px] shadow-md flex  overflow-hidden">
                                         <section className="w-[50%]  p-[48px] flex flex-col gap-[24px]">
                                             <h3 className="text-[2rem] font-semibold leading-tight">
                                                 {value.name}
@@ -101,9 +114,19 @@ const WorkPage = () => {
                                                 <path d="M16 20L27 9" stroke="#4B5563" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
                                             </svg>
                                         </section>
-                                        <figure className="w-[50%] p-[48px] bg-slate-100 ">
-                                            <img src={value.img} alt="" className="shadow-sm rounded-[10px] w-[100%] h-[100%] object-cover object-left-top" />
-                                        </figure>
+                                        <div className="w-[50%] p-[48px] bg-slate-100">
+                                            <figure className="group relative w-full h-full overflow-hidden rounded-[10px] shadow-md">
+                                                <div className="
+                                                duration-200 group-hover:-top-0
+                                                flex justify-center items-center z-10 absolute -top-full w-full h-full inset-0 bg-[rgba(0,0,0,0.2)]">
+                                                    <a href="">
+                                                        <CiLink size={24} />
+                                                    </a>
+                                                </div>
+                                                <img className="duration-200 group-hover:scale-110 group-hover:blur-[0.9px]"
+                                                    src={value.img} alt="" />
+                                            </figure>
+                                        </div>
                                     </article>
                                 )
                         })

@@ -2,11 +2,11 @@ import Avatar from "../components/avatar";
 
 const AboutPage = () => {
     return (
-        <section id="about" className="bg-slate-200 pt-[96px] pb-[96px]">
+        <section className="bg-slate-200 pt-[96px] pb-[96px]">
             <div className="container">
                 {/* title */}
                 <div className="flex justify-center">
-                    <h2 className="page-title ">
+                    <h2 id="about" className="page-title ">
                         About me
                     </h2>
                 </div>
