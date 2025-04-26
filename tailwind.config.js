@@ -6,7 +6,13 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      screens: {
+        'br1-1170': { 'max': '1169px' },
+        'br2-900': { 'max': '899px' },
+        'br3-800': { 'max': '799px' },
+      },
+    },
   },
   plugins: [],
 }

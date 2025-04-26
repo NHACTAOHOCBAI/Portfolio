@@ -7,10 +7,21 @@ import ExperiencePage from "./pages/experiencePage"
 import WorkPage from "./pages/workPage"
 import TestimonialsPage from "./pages/testimonialsPage"
 import AppFooter from "./components/appFooter"
+import { useState } from "react"
+import Drawer from "./components/drawer"
 const App = () => {
+  const [isOpenDrawer, setIsOpenDrawer] = useState(false);
+
   return (
-    <>
-      <AppHeader />
+    <div className="">
+      <Drawer
+        isOpenDrawer={isOpenDrawer}
+        setIsOpenDrawer={setIsOpenDrawer}
+      />
+      <AppHeader
+        isOpenDrawer={isOpenDrawer}
+        setIsOpenDrawer={setIsOpenDrawer}
+      />
       <main>
         <HeroPage />
         <AboutPage />
@@ -20,7 +31,7 @@ const App = () => {
         <TestimonialsPage />
       </main>
       <AppFooter />
-    </>
+    </div>
   )
 }
 export default App

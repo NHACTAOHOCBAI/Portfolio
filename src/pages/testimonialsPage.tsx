@@ -28,7 +28,7 @@ const TestimonialsPage = () => {
                         Nice things people have said about me:
                     </p>
                 </div>
-                <div className="mt-[48px] flex justify-between">
+                <div className="mt-[48px] flex justify-center gap-[20px] flex-wrap">
                     {
                         commensList.map((value) => {
                             return (

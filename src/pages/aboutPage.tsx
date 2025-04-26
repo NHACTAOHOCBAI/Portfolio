@@ -2,21 +2,28 @@ import Avatar from "../components/avatar";
 
 const AboutPage = () => {
     return (
-        <section className="bg-slate-200 pt-[96px] pb-[96px]">
-            <div className="container">
+        <section className="
+        bg-slate-200 pt-[96px] pb-[96px] custom-size">
+            <div className="
+            
+            container">
                 {/* title */}
                 <div className="flex justify-center">
                     <h2 id="about" className="page-title ">
                         About me
                     </h2>
                 </div>
-                <div className="flex justify-between mt-[48px]">
+                <div className="
+                br3-800:flex-col items-center gap-20
+                flex justify-between mt-[48px]">
                     <Avatar
                         boxShadow="-20px 20px rgba(0,0,0,0.2)"
                         objectPosition="center center "
                         className="w-[400px] h-[500px]"
                         urlImg="https://i.pinimg.com/736x/44/7a/5d/447a5d5a53f004791c2601d24bdb8f9c.jpg" />
-                    <section className="w-[585px]">
+                    <section className="
+                                br3-800:w-[100%] br3-800:text-center
+                    w-[45%]">
                         <h3 className="text-[2.5rem] font-semibold leading-tight">Curious about me? Here you have it:</h3>
                         <div className="desc-text flex flex-col gap-8 mt-8">
                             <p>

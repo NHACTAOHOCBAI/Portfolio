@@ -4,9 +4,14 @@ import TypewriterComponent from "typewriter-effect"
 
 const HeroPage = () => {
     return (
-        <section id="hero" className="h-screen">
-            <div className="container flex items-center justify-between">
-                <section className="w-[60%]">
+        <section id="hero" className="custom-size">
+            <div className="
+            br3-800:flex-col-reverse gap-11
+            container flex items-center justify-between">
+                <section className="
+                br3-800:flex  br3-800:flex-col items-center
+                br3-800:w-[100%] br3-800:text-center
+                w-[60%]">
                     {/* introduction */}
                     <h1 className="text-[6rem] font-bold leading-tight">
                         Hi,I'm Phucs

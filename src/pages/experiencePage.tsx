@@ -36,7 +36,9 @@ const ExperiencePage = () => {
                     <h2 className="page-title ">
                         Experience
                     </h2>
-                    <p className="desc-text text-[1.8rem]">
+                    <p className="
+                        br3-800:text-center
+                    desc-text text-[1.8rem]">
                         Here is a quick summary of my most recent experiences:
                     </p>
                 </div>
@@ -45,12 +47,16 @@ const ExperiencePage = () => {
                         expList.map((value) => {
                             return (
                                 <article className="
+                                br2-900:grid-cols-1 br2-900:grid-rows-[auto] br2-900:w-[auto]
                                 duration-200 hover:translate-x-20 hover:shadow-2xl
-                               shadow-lg p-[32px] rounded-[8px] bg-white w-[896px] flex justify-between desc-text">
-                                    <figure className="w-[200px] text-left">
+                                grid grid-cols-4
+                               shadow-lg p-[32px] rounded-[8px] bg-white w-[896px] desc-text">
+                                    <figure className="w-[200px] text-left col-start-1 ">
                                         <img className="w-[100px]" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQNg1hVrGgDyRiqMoXpx8zjispf0j_tJ38YWQ&s" alt="" />
                                     </figure>
-                                    <section className="w-[480px] text-left">
+                                    <section className="
+                                    br3-800:w-[330px]
+                                    w-[385px] text-left col-start-2 br2-900:col-start-1 br2-900:row-start-3">
                                         <h3 className="text-[2rem] font-semibold leading-tight">
                                             {value.role}
                                         </h3>
@@ -67,11 +73,12 @@ const ExperiencePage = () => {
                                             }
                                         </ul>
                                     </section>
-                                    <div className="w-[200px] text-right">
+                                    <div className="w-[200px] text-right br2-900:text-left pb-2 col-start-4  br2-900:col-start-1 br2-900:row-start-2">
                                         <span>{value.time}</span>
                                     </div>
                                 </article>
                             )
+
                         })
                     }
                 </div>

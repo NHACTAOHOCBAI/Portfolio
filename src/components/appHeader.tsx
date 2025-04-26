@@ -1,6 +1,10 @@
 import { useEffect, useState } from "react"
-
-const AppHeader = () => {
+import { IoMenu } from "react-icons/io5"
+interface IProp {
+    isOpenDrawer: boolean,
+    setIsOpenDrawer: (value: boolean) => void
+}
+const AppHeader = ({ setIsOpenDrawer }: IProp) => {
     const [isDarkMode, setIsDarkMode] = useState(false)
     const linkData = [
         {
@@ -42,8 +46,15 @@ const AppHeader = () => {
         }
     }, [isDarkMode]);
     return (
-        <header className="h-[68px]">
-            <div className="container flex items-center justify-end" >
+        <header className="h-[68px] ">
+            <IoMenu size={40} className="
+            br3-800:block
+            hidden
+            ml-[10px] mt-[10px]"
+                onClick={() => setIsOpenDrawer(true)} />
+            <div className="
+            br3-800:hidden
+            container flex items-center justify-end" >
                 <nav className="flex gap-[24px]">
                     {
                         linkData.map((value) => {

@@ -41,16 +41,18 @@ const SkillsPage = () => {
                     <h2 className="page-title ">
                         Skills
                     </h2>
-                    <p className="desc-text text-[1.8rem]">
+                    <p className="
+                    br3-800:text-center
+                    desc-text text-[1.8rem]">
                         The skills, tools and technologies I am really good at:
                     </p>
                 </div>
                 {/* skills */}
-                <div className="flex justify-between mt-[48px]">
+                <div className="flex gap-[20px] flex-wrap justify-between mt-[48px]">
                     {skillsList.map((value) => {
                         return (
                             <section >
-                                <figure className="text-center">
+                                <figure className="text-center w-[80px]">
                                     <img src={value.logo} alt={value.name} className="w-[50px] h-[50px] object-center m-auto" />
                                     <figcaption className="desc-text mt-[10px]">
                                         {value.name}
